@@ -1,0 +1,1 @@
+alert("anjing semua kau");
