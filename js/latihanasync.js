@@ -49,20 +49,20 @@ function shipLaptop(){
 }
 
 chooseLaptop()
-    .then((massage) => {
-     console.log(massage);
+    .then((message) => {
+     console.log(message);
      return processPayment();
     })
-    .then((massage) => {
-        console.log(massage);
+    .then((message) => {
+        console.log(message);
         return confirmOrder();
     })
-    .then((massage)=>{
-        console.log(massage);
+    .then((message)=>{
+        console.log(message);
         return shipLaptop();
     }) 
-    .then((massage)=>{
-        console.log(massage);
+    .then((message)=>{
+        console.log(message);
     })
     .catch((error)=>{
         console.log('proses gagal' + error);
