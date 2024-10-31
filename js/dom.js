@@ -18,5 +18,7 @@
  * .children, untuk mengembalikan semua element anak
  * 
  * untuk membuat element baru pada js menggunakan nameElement.appendChild()
+ * 
+ * remove()
  */
 

@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="teks">ini sebelum di ubah</p>
-    <button id="btn" onclick="ubahTeks()">klik</button>
+    <p id="teks"> ayouyyii </p>
+    <button onclick="hapusTeks()"></button>
 
     <script>
-        function ubahTeks(){
+        function hapusTeks(){
             const teks = document.getElementById('teks');
-            teks.innerText = 'ini setelah diubah';
+            teks.remove();
         }
     </script>
 </body>

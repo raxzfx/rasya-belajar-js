@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraf">ini adalah paragraf</p>
+    <button onclick="ubahParagraf()">klik</button>
+    <script>
+     function ubahParagraf(){
+        const paragraf = document.getElementById('paragraf');
+        if(paragraf.style.color == 'black'){
+            paragraf.style.color = 'red';
+        } else{
+            paragraf.style.color = 'black';
+        }
+     }
+    </script>
+</body>
+</html>
