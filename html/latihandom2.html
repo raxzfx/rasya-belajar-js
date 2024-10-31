@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #kotak{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<body>
+    <div id="kotak"></div>
+    <button id="button1" onclick="ubahWarna1()">klik untuk mengubah warna bg</button>
+    <button id="button2" onclick="kembalikanWarna()">klik untuk mengembalikan warna bg</button>
+
+    <script>
+        function ubahWarna1(){
+            document.getElementById('kotak').style.backgroundColor = 'blue'; 
+        }
+        function kembalikanWarna(){
+            document.getElementById('kotak').style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
