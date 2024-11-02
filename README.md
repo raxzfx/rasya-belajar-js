@@ -17,3 +17,6 @@ kalau innerText hanya akan menampilkan teks yang berada dalam tag html, sedangka
 dan, innerText bisa merubah text content yang berada pada tag tertentu jika innerHTML bisa merubah tagnya
 
 memanipulasi style dalam dom, dengan cara memanggil objek style diikuti dengan properti css untuk melakukan perubahan style, untuk penulisannya menggunakan metode camelCase, misalkan, border-radius menjadi borderRadius dll...
+
+addEventListener(), menerima 2 parameter, 1 nama event, 2 nama function yang akan di jalankan
+element.dispatchEvent(customEvent); = untuk menjalankan event custom

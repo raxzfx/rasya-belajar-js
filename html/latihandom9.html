@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+
+    </div>
+
+    <button onclick="nambahTeks()">klik</button>
+
+    <script>
+        function nambahTeks(){
+            const container = document.getElementById('container');
+            const teks = document.createElement('p');
+            teks.innerText = 'halo';
+            container.appendChild(teks);
+        }
+    </script>
 </body>
 </html>
