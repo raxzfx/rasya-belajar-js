@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">klik</button>
+    <div id="text">apappapa</div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const text = document.getElementById('text');
+
+        const newEvent = new Event('newEvent');
+
+        text.addEventListener('newEvent',function(){
+            text.style.display = 'none';
+        });
+
+        btn.addEventListener('click', function(){
+            text.dispatchEvent(newEvent);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggle-btn">klik</button>
+    <button id="toggle-reset">reset</button>
+    <div id="text">teks asli</div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const toggleReset = document.getElementById('toggle-reset');
+        const text = document.getElementById('text');
+
+        const eventBaru = new Event('eventBaru');
+
+        text.addEventListener('eventBaru',function(){
+            text.textContent = 'teks baru';
+        });
+
+        toggleBtn.addEventListener('click',function(){
+            text.dispatchEvent(eventBaru);
+        });
+
+        toggleReset.addEventListener('click',function(){
+            text.textContent = 'teks asli';
+        });
+    </script>
+</body>
+</html>

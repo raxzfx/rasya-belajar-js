@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="teks">akan di ganti setelah 3 detik jika kamu menekan tombol di bawah ini</p>
+    <button id="btn">klik</button>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const teks = document.getElementById('teks');
+
+        const delayedText = new Event('delayedText');
+
+        teks.addEventListener('delayedText', function() {
+            setTimeout(() => {
+                teks.innerText = 'sudah berubah setelah 3 detik';
+            }, 3000);
+        });
+
+        btn.addEventListener('click', function(){
+            teks.dispatchEvent(delayedText);
+        });
+    </script>
+</body>
+</html>

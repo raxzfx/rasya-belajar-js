@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text-color">ubah warna ku</p>
+    <button id="btn">klik aku</button>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const textColor = document.getElementById('text-color');
+
+        const changeColor = new CustomEvent('changeColor',{
+            detail:{ color : 'red'}
+        });
+
+        textColor.addEventListener('changeColor',function(){
+            textColor.style.color = event.detail.color;
+        });
+
+        btn.addEventListener('click',function(){
+            textColor.dispatchEvent(changeColor);
+        });
+    </script>
+</body>
+</html>

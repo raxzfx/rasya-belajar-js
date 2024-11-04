@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="teks">iya iya iya</p>
+    <button id="btn">klik</button>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const teks = document.getElementById('teks');
+
+        const myEvent = new Event('myEvent');
+
+        teks.addEventListener('myEvent', function(){
+            teks.innerText = 'engga engga engga';
+        });
+
+        btn.addEventListener('click', function(){
+            teks.dispatchEvent(myEvent);
+        });
+    </script>
+</body>
+</html>
