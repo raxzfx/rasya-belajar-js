@@ -20,3 +20,8 @@ memanipulasi style dalam dom, dengan cara memanggil objek style diikuti dengan p
 
 addEventListener(), menerima 2 parameter, 1 nama event, 2 nama function yang akan di jalankan
 element.dispatchEvent(customEvent); = untuk menjalankan event custom
+
+bubbling akan menjalankan children nya terlebih dahulu hingga parentnya
+capturing akan menjalankan parentnya terlebi dahulu baru ke childrennya
+
+.value, untuk membaca isi nilai yang di input pengguna dalam sebuah form
